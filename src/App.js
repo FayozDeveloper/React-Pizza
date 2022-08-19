@@ -16,7 +16,7 @@ import {Cart, Home} from './pages/indexPages'
                      <Route path={'/Cart'} component={Cart} exact/>
                  </div>
              </div>
-             <h4 className='Dev'>© 2022. F.Kakhramonov</h4>
+             <h4 className='Dev'>2022. F.Kakhramonov ©</h4>
          </div>
      )
  }
