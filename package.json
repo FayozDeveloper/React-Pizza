@@ -32,6 +32,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+    "server": "node server.js",
     "dev": "json-server -p 3001 -w public/db.json"
   },
   "eslintConfig": {
