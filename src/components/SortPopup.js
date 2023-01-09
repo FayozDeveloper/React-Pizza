@@ -2,7 +2,6 @@ import React, {useState, useEffect, useRef} from 'react'
 import PropTypes from "prop-types";
 
 
-
 const SortPopup = React.memo(function SortPopup({items,activeSortType,onClickSortType}) {
 
     const [visiblePop, setVisiblePop] = useState(false);

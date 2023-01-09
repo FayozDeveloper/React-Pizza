@@ -19,6 +19,7 @@ const filters = (state = initialState, action) => {
             category: action.payload,
         };
     }
+
     return state
 }
 
