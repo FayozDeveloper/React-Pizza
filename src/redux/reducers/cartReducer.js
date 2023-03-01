@@ -1,10 +1,9 @@
-import {object} from "prop-types";
-
 const initialState = {
     items: {},
     totalPrice: 0,
     totalCount: 0,
 };
+
 
 const getTotalPrice = (arr) => arr.reduce((sum, obj) => obj.price + sum, 0);
 
