@@ -11,8 +11,8 @@ const SortPopup = React.memo(function SortPopup({items,activeSortType,onClickSor
     function ToggleVisiblePopup(){
         setVisiblePop(!visiblePop)
     }
-
     const HandleClick = (e) => {
+
         if (!e.path.includes(sortRef.current)){
             setVisiblePop(false)
         }
@@ -25,11 +25,9 @@ const SortPopup = React.memo(function SortPopup({items,activeSortType,onClickSor
         setVisiblePop(false)
     }
 
-
     useEffect(()=>{
         document.body.addEventListener('click', HandleClick);
     },[])
-
 
     return(
         <div ref={sortRef} className="sort">
