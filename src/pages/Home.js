@@ -55,11 +55,12 @@ function Home () {
             </div>
             <h2 className="content__title">Все пиццы</h2>
             <div className="content__items">
-                {isLoaded ? items.map((obj)=> (
+                {isLoaded ?
+                    items.map((obj)=> (
                         <PizzaBlock
                             key={obj.id}
                             onClickAddPizza={HandleAddPizzaToCart}
-                            isLoaded={true}
+                            // isLoaded={true}
                             addedCount={cartItems[obj.id] && cartItems[obj.id].items.length }
                             {...obj}
                         />
