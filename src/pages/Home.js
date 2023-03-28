@@ -64,13 +64,6 @@ function Home () {
                             {...obj}
                         />
                     )) : Array(12).fill(0).map((_,index)=> <LoadingBlock key={index}/>)}
-                {isLoaded ? items.map((obj) => (
-                    <PizzaBlock
-                        key={obj.id}
-                        onClickAddPizza={HandleAddPizzaToCart}
-                        isLoading
-                    />
-                )): Array(12).fill(0).map((_,index) => <LoadingBlock key={index}/>)}
             </div>
         </div>
     )
